@@ -17,12 +17,12 @@ if __name__ == '__main__':
         print("Заданный список пуст", file=sys.stderr)
         exit(1)
 
-    A_max = A[0]
-    A_max = A[0]
+    A_min = A[0]
+    A_min = A[0]
     for v, ad in enumerate(A):
-        if ad >= A_max:
-            v_max, A_max = v, ad
-    print('Индекс максимального элемента: ', v_max)
+        if ad <= A_min:
+            v_min, A_min = v, ad
+    print('Индекс максимального элемента: ', v_min)
     #   Произведение элементов списка, расположенных между первым и вторым нулевыми элементами.
     for v, ad in enumerate(A):
         if ad == 0:
